@@ -2,3 +2,6 @@ bin/
 .gdb_history
 test.c
 *solve.py
+solve_*
+sdekit
+*.tar*
