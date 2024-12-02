@@ -1,0 +1,2 @@
+echo -ne "12345678sstlasje" | ./bin/ex1
+(basically orice input de dimensiune mai mare decat 8, adica dimensiunea bufferului)

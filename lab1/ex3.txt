@@ -1,0 +1,8 @@
+1. objdump -d ./bin/ex3 -> vedem adresa instructiunii 'ret' din advertisment
+2. b *0x<adresa_de_mai_sus>
+3. r -> introducem input
+4. set *((long *)$rsp)=0x<adresa_lui_print_msg> (observabila in comanda de la pasul 1.)
+5. set $rdi="salut" (sau orice string care va fi pasat ca parametru functiei print_msg)
+6. c
+
+SIGSEGV pentru ca <[0x7fffffffd708] not aligned to 16 bytes>

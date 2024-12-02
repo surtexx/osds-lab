@@ -1,0 +1,8 @@
+1. 
+.data -> sectiunea cu rw ca permisiuni (0x404020 - 0x404047)
+.text -> sectiunea cu rx ca permisiuni (0x401020 - 0x401110)
+.rodata -> 0x402000 - 0x402004
+.bss -> 0x404047 - 0x404048
+
+2.
+b main -> 0x40110e

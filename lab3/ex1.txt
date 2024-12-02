@@ -1,0 +1,7 @@
+/opt/metasploit/apps/pro/vendor/bundle/ruby/3.2.0/gems/metasploit-framework-6.4.33/tools/exploit/pattern_create.rb -l 1000 > fuzz.in
+
+gdb ./bin/ex1 si dam run folosind r < fuzz.in, verificamm ce e in x/gx $rbp
+
+/opt/metasploit/apps/pro/vendor/bundle/ruby/3.2.0/gems/metasploit-framework-6.4.33/tools/exploit/pattern_offset.rb -q <ce_am_gasit_in_rbp>
+
+offsetul este valoarea afisata + 8 (344 in cazul meu)
